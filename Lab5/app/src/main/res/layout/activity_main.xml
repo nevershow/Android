@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="ml.huangjw.lab5.MainActivity">
+
+    <Button
+        android:id="@+id/static_register"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/circlebackground"
+        android:text="@string/_static"
+        android:textColor="#FFFFFF">
+    </Button>
+
+    <Button
+        android:id="@+id/dynamic_register"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/circlebackground"
+        android:text="@string/_dynamic"
+        android:textColor="#FFFFFF">
+    </Button>
+</LinearLayout>

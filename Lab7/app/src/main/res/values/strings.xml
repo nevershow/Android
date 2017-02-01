@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Lab7</string>
+    <string name="hint1">New Password</string>
+    <string name="hint2">Confirm Password</string>
+    <string name="hint3">Password</string>
+    <string name="ok">OK</string>
+    <string name="clear">CLEAR</string>
+    <string name="save">SAVE</string>
+    <string name="LOAD">LOAD</string>
+    <string name="error1">Password Mismatch.</string>
+    <string name="error2">Password cannot be empty.</string>
+    <string name="error3">Invalid Password.</string>
+    <string name="error4">Failed to load file.</string>
+    <string name="success1">Load successfully.</string>
+    <string name="success2">Save successfully.</string>
+</resources>

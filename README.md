@@ -1,2 +1,2 @@
 # Android
-Android course homeworks and projects
+Android course homeworks and final project

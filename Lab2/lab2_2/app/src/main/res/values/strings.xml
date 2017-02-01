@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ExperimentTwo</string>
+    <string name="title">中山大学课外体育积分电子认证系统</string>
+    <string name="alt">中山大学</string>
+    <string name="username_label">用户名:</string>
+    <string name="username">请输入用户名</string>
+    <string name="password_label">密码:</string>
+    <string name="password">请输入密码</string>
+    <string name="student">学生</string>
+    <string name="teacher">老师</string>
+    <string name="club">社团</string>
+    <string name="admin">管理员</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="usernameerror">用户名不能为空</string>
+    <string name="passworderror">密码不能为空</string>
+    <string name="positive">对话框"确定"按钮被点击</string>
+    <string name="negative">对话框"取消"按钮被点击</string>
+    <string name="snackbarclick">Snackbar的按钮被点击了</string>
+</resources>

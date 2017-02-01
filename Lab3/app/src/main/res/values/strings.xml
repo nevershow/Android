@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lab3</string>
+    <string name="back">Back</string>
+    <string name="empty">Empty</string>
+    <string name="line">Line</string>
+    <string name="more">更多资料</string>
+</resources>

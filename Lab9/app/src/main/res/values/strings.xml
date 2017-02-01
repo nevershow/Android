@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Lab9</string>
+    <string name="welcome">Welcome to the Weather Search!</string>
+    <string name="cityname">City name: </string>
+    <string name="search">Search</string>
+    <string name="nonetwork">当前没有可用网络!</string>
+    <string name="emptycityname">城市名不能为空!</string>
+    <string name="toofast">您的点击速度过快,二次点击速度＜600ms</string>
+    <string name="citynoexists">当前城市不存在，请重新输入</string>
+    <string name="timeout">连接超时,请重试</string>
+    <string name="notChina">只能查询国内城市，请重新输入</string>
+</resources>

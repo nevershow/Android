@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lab6</string>
+    <string name="default_text">Loaded media file: </string>
+    <string name="play">PLAY</string>
+    <string name="stop">STOP</string>
+    <string name="exit">EXIT</string>
+</resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="ml.huangjw.lab1.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/custom_margin"
+        android:text="@string/title"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/custom_margin"
+        android:layout_marginTop="@dimen/custom_margin"
+        android:contentDescription="@string/alt"
+        android:src="@mipmap/sysu"/>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/custom_margin"
+        android:layout_marginRight="@dimen/custom_margin"
+        android:stretchColumns="1">
+
+        <TableRow android:layout_marginBottom="10dp">
+            <TextView
+                android:text="@string/username_label"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/custom_textSize"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/username"
+                android:singleLine="true"
+                android:textSize="@dimen/custom_textSize"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="@string/password_label"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/custom_textSize"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textSize="@dimen/custom_textSize"/>
+        </TableRow>
+    </TableLayout>
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/custom_margin"
+        android:orientation="horizontal"
+        android:checkedButton="@+id/initradiobtn">
+
+        <RadioButton
+            android:id="@+id/initradiobtn"
+            android:layout_marginEnd="10dp"
+            android:text="@string/student"
+            style="@style/custom_style"
+            />
+
+        <RadioButton
+            android:layout_marginEnd="10dp"
+            android:text="@string/teacher"
+            style="@style/custom_style"
+            />
+
+        <RadioButton
+            android:layout_marginEnd="10dp"
+            android:text="@string/club"
+            style="@style/custom_style"
+            />
+
+        <RadioButton
+            android:text="@string/admin"
+            style="@style/custom_style"
+            />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/custom_margin"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/custom"
+            android:text="@string/login"
+            android:textColor="@color/white_btn"
+            android:textSize="@dimen/custom_textSize"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom"
+            android:text="@string/register"
+            android:textColor="@color/white_btn"
+            android:textSize="@dimen/custom_textSize"/>
+    </LinearLayout>
+</LinearLayout>

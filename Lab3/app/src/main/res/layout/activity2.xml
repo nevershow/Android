@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".Activity2">
+
+    <RelativeLayout
+        android:id="@+id/topDiv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="15dp"
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/back"
+            android:layout_alignStart="@+id/name"
+            android:contentDescription="@string/back"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="#ffffff"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"/>
+
+        <ImageView
+            android:id="@+id/star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/name"
+            android:src="@mipmap/empty_star"
+            android:contentDescription="@string/empty"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="2">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/phoneNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#D5000000"
+                android:text="15521077160"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                />
+            <TextView
+                android:id="@+id/phoneDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phoneNum"
+                android:layout_alignStart="@id/phoneNum"
+                android:layout_marginTop="5dp"
+                android:textColor="#8A000000"
+                android:textSize="15sp"
+                android:text="手机 广东"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/chat"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/chat"/>
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignTop="@id/chat"
+                android:layout_alignBottom="@id/chat"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/chat"
+                android:layout_marginEnd="20dp"
+                android:background="#1E000000"
+                android:contentDescription="@string/line"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#1E000000"
+                android:layout_below="@id/phoneDetail"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:contentDescription="@string/line"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:textSize="18sp"
+            android:textColor="#D5000000"
+            android:text="@string/more"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#1E000000"
+            android:contentDescription="@string/line"/>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/operation">
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

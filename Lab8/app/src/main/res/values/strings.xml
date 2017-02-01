@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Lab8</string>
+    <string name="additem">增加条目</string>
+    <string name="name">姓名</string>
+    <string name="birth">生日</string>
+    <string name="gift">礼物</string>
+    <string name="name2">姓名: </string>
+    <string name="birth2">生日: </string>
+    <string name="gift2">礼物: </string>
+    <string name="tel">电话: </string>
+    <string name="additem2">增加</string>
+    <string name="emptyname">名字为空，请完善</string>
+    <string name="duplicatename">名字重复啦，请核查</string>
+    <string name="dialogtitle">( *・ω・)✄╰ひ╯</string>
+</resources>
