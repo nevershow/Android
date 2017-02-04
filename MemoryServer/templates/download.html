@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>下载难忘</title>
+  <link rel="shortcut icon" href="static/memory.png">
+  <style type="text/css"> 
+    .softinfo {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .softsize {
+        margin-right:10px;
+    }
+    body {
+      background: url("static/bg.jpg") center center / cover no-repeat;
+    }
+  </style>
+  <script type="text/javascript">
+    function download() {
+      window.location = "static/memory.apk"
+    }
+  </script>
+</head>
+<body>
+  <div style="margin: 0 auto; text-align: center; margin-top:10%;">
+    <img src="static/memory.png"/>
+  </div>
+  <div id="download" style="cursor:pointer; margin: 0 auto; width: 386px; height: 77px; background: transparent url(static/btn_bg.png) no-repeat 0 0; margin-top: 20px;" onclick="download()">
+  </div>
+  <div class="softinfo">
+   <span class="softsize">大小：4.2M</span>
+   <span class="softdate">更新：2016-12-20</span>
+   <a href="static/userguide.pdf">用户手册>></a> 
+  </div>
+</body>
+</html>

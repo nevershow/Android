@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>导入备忘</title>
+  <link rel="shortcut icon" href="static/memory.png">
+  <style type="text/css">
+     img {
+       width: 100%;
+       height: 100%;
+     }
+  </style>
+</head>
+<body>
+
+<script type="text/javascript">
+
+(function(){
+  //differences in different browsers or app webview 
+  var ua = navigator.userAgent.toLowerCase();
+  var appurl = "memory://?{{task}}";
+
+  function sol(ischrome) {
+    if (navigator.userAgent.match(/android/i)) {
+      if (ischrome)
+        window.open(appurl);
+      else
+        window.location.href = appurl;
+      var loadDateTime = new Date();
+      window.setTimeout(function () {
+        var timeOutDateTime = new Date();
+        if (timeOutDateTime - loadDateTime < 1500 && location.href.indexOf('memory://') == -1) {
+          window.location = "download";
+        }
+        else {
+          window.close();
+        }
+      }, 500);
+    } else {
+     window.location = "download";
+    }
+  }
+
+  if((/micromessenger/.test(ua) && !/iemobile/.test(ua) ) || /qq\//.test(ua) || /weibo/.test(ua) || /renren/.test(ua)) {
+    var img = document.createElement("img");
+    img.setAttribute("src", "static/tip.jpeg");
+    document.body.appendChild(img);
+  }
+  else {
+    sol(false);
+  }
+}());
+</script>
+</body>
+</html>
